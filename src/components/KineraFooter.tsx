@@ -109,14 +109,6 @@ export const KineraFooter: React.FC<KineraFooterProps> = ({
               </li>
               <li>
                 <button 
-                  onClick={onOpenAbout} 
-                  className="hover:text-white transition-colors cursor-pointer"
-                >
-                  Careers
-                </button>
-              </li>
-              <li>
-                <button 
                   onClick={() => onNavigate('insights')} 
                   className="hover:text-white transition-colors cursor-pointer"
                 >
@@ -235,15 +227,27 @@ export const KineraFooter: React.FC<KineraFooterProps> = ({
               {legalModal}
             </h3>
             <div className="space-y-2 text-xs text-slate-400 max-h-64 overflow-y-auto pr-2">
-              <p>
-                Kinera Research maintains strict primary research ethics and double-blind respondent privacy protocols compliant with EphMRA, CASRO, and HIPAA requirements.
-              </p>
-              <p>
-                All research participants undergo double-opt-in verification. Commercial client datasets, custom forecasting algorithms, and strategic deliverables are treated as privileged and confidential.
-              </p>
-              <p>
-                This digital asset serves as a prototype interface and architectural demonstrator for design review.
-              </p>
+              {legalModal === 'Privacy Policy' && (
+                <>
+                  <p>Kinera Research uses personal information to respond to research enquiries, recruit qualified participants and deliver agreed research services.</p>
+                  <p>We limit access to people and service providers who need the information for those purposes, retain it only as long as necessary and apply appropriate confidentiality and security safeguards.</p>
+                  <p>You may contact Kinera Research to request access, correction or deletion of your personal information, subject to applicable law.</p>
+                </>
+              )}
+              {legalModal === 'Terms of Use' && (
+                <>
+                  <p>By using this website, you agree to use its content lawfully and not to interfere with the website, its security or another person's access to it.</p>
+                  <p>Website content is provided for general information and may change without notice. It does not constitute medical, legal, financial or professional advice.</p>
+                  <p>Kinera Research retains its rights in the website content, brand and materials. Any permitted use must preserve applicable copyright and attribution notices.</p>
+                </>
+              )}
+              {legalModal === 'Cookie Policy' && (
+                <>
+                  <p>This website may use essential cookies and similar technologies to keep the site secure, remember basic preferences and understand aggregate site usage.</p>
+                  <p>Where required, non-essential cookies are used only with your consent. You can manage cookies through your browser settings, although disabling some cookies may affect site functionality.</p>
+                  <p>Cookie practices may change as the website and its analytics tools evolve. The latest version of this policy will appear here.</p>
+                </>
+              )}
             </div>
             <div className="mt-5 text-right">
               <button

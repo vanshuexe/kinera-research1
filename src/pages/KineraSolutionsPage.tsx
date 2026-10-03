@@ -113,13 +113,6 @@ export const KineraSolutionsPage: React.FC<{
                   </p>
                 </div>
                 
-                <button
-                  onClick={() => onOpenProjectModal(sol.title)}
-                  className="group inline-flex items-center gap-3 text-sm font-bold text-[#C84B31] hover:text-slate-950 transition-colors"
-                >
-                  Learn more
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </button>
               </div>
 
               {/* Right Side: Deep Details */}

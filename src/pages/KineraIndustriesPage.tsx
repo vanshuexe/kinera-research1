@@ -1,6 +1,5 @@
 import React from 'react';
 import { INDUSTRIES_LIST } from '../data/kineraData';
-import { ArrowRight } from 'lucide-react';
 
 export const KineraIndustriesPage: React.FC<{
   onOpenProjectModal: (category?: string) => void;
@@ -62,16 +61,6 @@ export const KineraIndustriesPage: React.FC<{
                   </ul>
                 </div>
 
-                {/* CTA */}
-                <div className="pt-8 mt-auto border-t border-[#EAE6DC] group-hover:border-slate-800 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
-                  <button
-                    onClick={() => onOpenProjectModal(industry.name)}
-                    className="inline-flex items-center gap-3 text-xs font-bold text-[#C84B31] hover:text-white transition-colors uppercase tracking-widest w-full"
-                  >
-                    Learn more
-                    <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-500" />
-                  </button>
-                </div>
               </div>
             ))}
           </div>

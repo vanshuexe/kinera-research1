@@ -28,7 +28,7 @@ export const KineraHeader: React.FC<KineraHeaderProps> = ({
     <>
       <header className="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 pointer-events-none animate-fade-in-up">
         <div className="max-w-5xl mx-auto pointer-events-auto">
-          <div className="bg-white/80 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.06)] rounded-full h-14 sm:h-16 flex items-center justify-between px-4 sm:px-6 transition-all duration-300">
+          <div className="bg-white/80 backdrop-blur-2xl border border-[#E6DCF2] shadow-[0_8px_32px_rgba(107,79,163,0.14)] rounded-full h-14 sm:h-16 flex items-center justify-between px-4 sm:px-6 transition-all duration-300">
             
             {/* Logo */}
             <button 
@@ -58,7 +58,7 @@ export const KineraHeader: React.FC<KineraHeaderProps> = ({
             <div className="hidden md:flex items-center">
               <button
                 onClick={onOpenProjectModal}
-                className="px-6 py-2.5 rounded-full text-xs font-bold text-white bg-[#141722] hover:bg-[#C84B31] transition-all duration-300 cursor-pointer shadow-md shadow-[#141722]/20 hover:shadow-[#C84B31]/30 active:scale-95"
+                className="px-6 py-2.5 rounded-full text-xs font-bold text-white bg-[#6B4FA3] hover:bg-[#E66C45] transition-all duration-300 cursor-pointer shadow-md shadow-[#6B4FA3]/20 hover:shadow-[#E66C45]/30 active:scale-95"
               >
                 Start a project
               </button>
@@ -127,7 +127,7 @@ export const KineraHeader: React.FC<KineraHeaderProps> = ({
                 setMobileMenuOpen(false);
                 onOpenProjectModal();
               }}
-              className="w-full py-4 rounded-full text-sm font-bold text-white bg-[#111625] hover:bg-[#252A3B] active:scale-95 transition-all cursor-pointer text-center shadow-lg shadow-[#111625]/20"
+              className="w-full py-4 rounded-full text-sm font-bold text-white bg-[#2C9A86] hover:bg-[#6B4FA3] active:scale-95 transition-all cursor-pointer text-center shadow-lg shadow-[#2C9A86]/20"
             >
               Start a project
             </button>

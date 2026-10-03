@@ -1,10 +1,23 @@
 @import "tailwindcss";
 
 @layer base {
+  :root {
+    --kinera-purple: #6B4FA3;
+    --kinera-orange: #E66C45;
+    --kinera-yellow: #D3A529;
+    --kinera-teal: #2C9A86;
+    --kinera-lavender: #F3EEFA;
+    --kinera-mint: #E7F4EF;
+  }
+
   body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     color: #111625;
-    background-color: #FAF8F5;
+    background-color: var(--kinera-lavender);
+    background-image:
+      radial-gradient(circle at 8% 12%, rgba(107, 79, 163, 0.12), transparent 28rem),
+      radial-gradient(circle at 92% 28%, rgba(230, 108, 69, 0.10), transparent 26rem),
+      radial-gradient(circle at 52% 92%, rgba(44, 154, 134, 0.11), transparent 30rem);
     overflow-x: hidden;
   }
 
@@ -34,6 +47,16 @@
   .shadow-premium-hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.03);
   }
+}
+
+/* Brand palette wash: keeps the existing layout airy without leaving every section stark white. */
+[class*="bg-[#FAF8F5]"] { background-color: var(--kinera-lavender) !important; }
+[class*="bg-[#FBF9F4]"] { background-color: #F7F2FB !important; }
+[class*="bg-[#EFF3EB]"] { background-color: var(--kinera-mint) !important; }
+[class~="bg-white"], [class*="bg-white/90"], [class*="bg-white/80"] { background-color: #FCFAFF !important; }
+
+.brand-palette-border {
+  border-image: linear-gradient(90deg, var(--kinera-purple), var(--kinera-orange), var(--kinera-yellow), var(--kinera-teal)) 1;
 }
 
 /* Custom scrollbar styling */
@@ -130,4 +153,3 @@
   opacity: 1;
   transform: translateY(0);
 }
-

@@ -111,7 +111,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C84B31]" />
                 </span>
                 <span className="text-[10px] font-bold text-slate-500 tracking-[0.25em] uppercase font-sans-clean">
-                  Consumer & Patient Intelligence
+                  Primary Healthcare Market Research
                 </span>
               </div>
 
@@ -127,21 +127,28 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
 
               {/* Body */}
               <p className="text-sm sm:text-base text-slate-600 max-w-lg font-normal leading-relaxed">
-                Kinera synthesizes surveys, EHR claims, physician discourse, registries, and telemetry into a single decision-ready picture — built for pharma, healthcare, and consumer leaders who need evidence clarity over speculation.
+                Kinera connects the right healthcare respondents to the questions that matter, helping research teams move from a clear brief to decision-ready evidence.
               </p>
 
               {/* Inline data proof strip */}
               <div className="flex flex-wrap gap-x-6 gap-y-4">
                 {[
-                  { value: '1.2M+', label: 'Patient records' },
-                  { value: '9,400+', label: 'Verified HCP panel' },
-                  { value: '75+', label: 'Clinical registries' },
+                  { value: '50,000', label: 'Verified expert panel' },
+                  { value: '40+', label: 'Countries' },
+                  { value: '120+', label: 'Specialties' },
                 ].map(({ value, label }) => (
                   <div key={label}>
                     <div className="text-lg sm:text-xl font-bold text-slate-950 font-sans-clean">{value}</div>
                     <div className="text-[10px] sm:text-xs text-slate-500 font-medium mt-0.5">{label}</div>
                   </div>
                 ))}
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 border-t border-[#EAE6DC] pt-5 text-xs text-slate-600">
+                <div><span className="font-semibold text-slate-900">Regions:</span> North America, Europe, APAC, LATAM and Middle East, under one point of contact</div>
+                <div><span className="font-semibold text-slate-900">23 Professions:</span> From physicians and NPs to pharmacists, lab experts and practice managers</div>
+                <div><span className="font-semibold text-slate-900">120+ Specialties:</span> From oncology to neurology, cardiology, dermatology and beyond</div>
+                <div><span className="font-semibold text-slate-900">10+ Languages</span></div>
               </div>
 
               {/* CTAs */}
@@ -216,7 +223,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
                             </div>
                             {pos === 0 && (
                               <button onClick={() => setActiveCard(p => (p + 1) % TOTAL_CARDS)} className="flex items-center justify-between w-full bg-white/10 hover:bg-white/20 transition-colors rounded-xl px-4 py-2.5 cursor-pointer">
-                                <span className="text-xs font-semibold text-slate-300">See HCP Signal Trend</span>
+                                 <span className="text-xs font-semibold text-slate-300">See HCP signal trend</span>
                                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
                               </button>
                             )}
@@ -264,7 +271,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
                             </div>
                             {pos === 0 && (
                               <button onClick={() => setActiveCard(p => (p + 1) % TOTAL_CARDS)} className="flex items-center justify-between w-full bg-slate-100 hover:bg-slate-200 transition-colors rounded-xl px-4 py-2.5 cursor-pointer">
-                                <span className="text-xs font-semibold text-slate-600">See client testimonial</span>
+                                 <span className="text-xs font-semibold text-slate-600">See client testimonial</span>
                                 <svg className="w-4 h-4 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
                               </button>
                             )}
@@ -309,7 +316,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
                             </div>
                             {pos === 0 && (
                               <button onClick={() => setActiveCard(p => (p + 1) % TOTAL_CARDS)} className="flex items-center justify-between w-full bg-[#111625] hover:bg-[#1e2d4a] transition-colors rounded-xl px-4 py-2.5 cursor-pointer">
-                                <span className="text-xs font-semibold text-white">See global reach</span>
+                                 <span className="text-xs font-semibold text-white">See global reach</span>
                                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" /></svg>
                               </button>
                             )}
@@ -393,7 +400,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
                 key={idx} 
                 className={`pt-6 lg:pt-0 ${idx > 0 ? 'lg:pl-8' : ''} space-y-2 group`}
               >
-                <div className="text-4xl sm:text-5xl font-sans-clean font-semibold text-slate-950 tracking-tight group-hover:text-[#C84B31] transition-colors">
+                <div className="text-4xl sm:text-5xl font-sans-clean font-semibold tracking-tight group-hover:text-[#C84B31] transition-colors" style={{ color: stat.color }}>
                   {stat.value}
                 </div>
                 <p className="text-xs text-slate-600 max-w-[200px] leading-relaxed font-normal">
@@ -467,10 +474,6 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
                   </p>
                 </div>
 
-                <div className="pt-6 mt-4 border-t border-[#F2EFE9] flex items-center text-xs font-semibold text-slate-700 group-hover:text-[#C84B31] transition-colors">
-                  <span>Learn more</span>
-                  <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
-                </div>
               </div>
             ))}
           </div>

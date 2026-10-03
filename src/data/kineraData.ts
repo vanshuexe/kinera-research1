@@ -10,20 +10,24 @@ export const TRUSTED_CLIENTS = [
 
 export const STATS_METRICS = [
   {
+    value: '50,000',
+    label: 'Verified expert panel',
+    color: '#6B4FA3'
+  },
+  {
     value: '40+',
-    label: "Countries where we've fielded primary research studies"
+    label: 'Countries',
+    color: '#E66C45'
   },
   {
-    value: '1,200+',
-    label: 'Healthcare professionals and patients in our verified panels'
+    value: '120+',
+    label: 'Specialties',
+    color: '#D3A529'
   },
   {
-    value: '6d',
-    label: 'Average turnaround from field close to first insight readout'
-  },
-  {
-    value: '98%',
-    label: 'Client studies delivered on or ahead of agreed timeline'
+    value: '10+',
+    label: 'Languages',
+    color: '#2C9A86'
   }
 ];
 
