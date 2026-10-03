@@ -45,7 +45,6 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
         'KOL and emerging-expert identification for IDIs and advisory boards',
         'Work from your target list or a list we build'
       ],
-      typicalTimeline: '2 to 4 weeks from scope to executive readout',
       sampleQuestions: [
         'Which specialists and KOLs best match our study screener?',
         'What credentials and experience should be verified before fieldwork?'
@@ -67,7 +66,6 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
         'Consent and privacy-compliant recruitment',
         'Scheduling and reminders to reduce no-shows'
       ],
-      typicalTimeline: '3 to 6 weeks for custom model deployment',
       sampleQuestions: [
         'Which patient and caregiver profiles are available in our target markets?',
         'What support is needed to recruit rare or hard-to-reach populations?'
@@ -88,7 +86,6 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
         'Consumer recruitment against demographic and behavioral screeners',
         'Multi-market feasibility built in'
       ],
-      typicalTimeline: '10 to 14 business days',
       sampleQuestions: [
         'Which payer and P&T decision-makers should we speak with?',
         'Which consumer profiles match our demographic and behavioral screeners?'
@@ -110,7 +107,6 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
         'Honorarium management and respondent payments',
         'Regular recruitment status updates'
       ],
-      typicalTimeline: 'Continuous reporting with bi-weekly executive briefs',
       sampleQuestions: [
         'What feasibility and incidence can we expect before recruitment begins?',
         'How should sessions, reminders and honoraria be managed across markets?'
@@ -132,7 +128,6 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
         'ROI and net-promoter analysis for patient support services',
         'Field force enablement efficacy auditing'
       ],
-      typicalTimeline: 'Baseline plus ongoing quarterly readouts',
       sampleQuestions: [
         'Did our digital patient onboarding hub verifiably improve 6-month therapy persistence?',
         'Which support interventions generated the highest retention among newly diagnosed patients?'
@@ -154,7 +149,6 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
         'Target product profile (TPP) commercial refinement',
         'Executive board and investor readout synthesis'
       ],
-      typicalTimeline: 'Flexible retainer or sprint-based engagement',
       sampleQuestions: [
         'How should we price and position our asset ahead of a second-to-market competitor entry?',
         'What strategic pivot will maximize enterprise valuation before our Series C / IPO window?'

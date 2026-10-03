@@ -17,7 +17,6 @@ export interface SolutionItem {
   fullDetails?: {
     overview: string;
     keyMethods: string[];
-    typicalTimeline: string;
     sampleQuestions: string[];
   };
 }

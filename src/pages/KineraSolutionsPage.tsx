@@ -127,7 +127,7 @@ export const KineraSolutionsPage: React.FC<{
                     </p>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+                  <div>
                     {/* Key Methods */}
                     <div>
                       <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block font-sans-clean mb-4 border-b border-[#EAE6DC] pb-2">Key Methods Employed</h4>
@@ -141,16 +141,6 @@ export const KineraSolutionsPage: React.FC<{
                       </ul>
                     </div>
 
-                    {/* Timeline */}
-                    <div>
-                      <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block font-sans-clean mb-4 border-b border-[#EAE6DC] pb-2">Typical Timeline</h4>
-                      <div className="inline-flex items-center gap-2 px-4 py-2 border border-[#EAE6DC] bg-[#FAF8F5]">
-                        <svg className="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <span className="text-sm font-semibold text-slate-700">{sol.fullDetails?.typicalTimeline || '4 - 8 Weeks'}</span>
-                      </div>
-                    </div>
                   </div>
 
                   {/* Questions */}

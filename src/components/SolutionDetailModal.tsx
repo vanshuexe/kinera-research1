@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ArrowRight, CheckCircle2, Clock, HelpCircle } from 'lucide-react';
+import { X, ArrowRight, CheckCircle2, HelpCircle } from 'lucide-react';
 import { SolutionItem } from '../types';
 
 interface SolutionDetailModalProps {
@@ -77,10 +77,6 @@ export const SolutionDetailModal: React.FC<SolutionDetailModalProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center gap-2 text-xs text-slate-600 bg-[#EFF3EB] p-3 rounded-lg border border-[#DCE4D6]">
-              <Clock className="w-4 h-4 text-[#3F4F19] shrink-0" />
-              <span><strong>Typical Turnaround:</strong> {solution.fullDetails.typicalTimeline}</span>
-            </div>
           </div>
         )}
 
