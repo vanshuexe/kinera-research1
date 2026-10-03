@@ -384,7 +384,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style={{ backgroundColor: item.bg, color: item.color }}>
                   {item.icon}
                 </div>
-                <span className="text-sm font-semibold text-slate-700 font-sans-clean whitespace-nowrap">{item.name}</span>
+                <span className="text-sm font-semibold text-slate-700 font-sans-clean whitespace-nowrap">{TRUSTED_CLIENTS[i % TRUSTED_CLIENTS.length]}</span>
               </div>
             ))}
           </div>
@@ -432,16 +432,16 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-sans-clean font-semibold text-slate-950 tracking-tight leading-snug">
-              Research built around the decision, not the deliverable
+              Recruitment built around the right respondent
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal pt-1">
-              From double-blind stakeholder IDIs to 1.2M patient claims cohorts, every engagement is custom-scoped around the specific commercial decision you're making.
+              From HCP and KOL recruitment to patient, payer and consumer sourcing, every engagement is built around the people your study needs to hear from.
             </p>
           </div>
 
           {/* 6 Solution Cards Grid with Custom SVG Icons */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {SOLUTIONS_LIST.map((sol) => (
+            {SOLUTIONS_LIST.slice(0, 4).map((sol) => (
               <div
                 key={sol.id}
                 onClick={() => onSelectSolution(sol)}
@@ -612,7 +612,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
 
                   <div className="bg-[#FAF8F5] rounded-2xl p-6 border border-[#F2EFE9]">
                     <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block font-sans-clean mb-4">
-                      Frequent Decisions Scoped In This Category
+                       Who We Recruit
                     </span>
                     <ul className="space-y-4">
                       {selectedIndustry.recentQuestions.map((q, i) => (
@@ -670,7 +670,7 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
 
           {/* Insights Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {INSIGHTS_LIST.map((article, idx) => (
+            {INSIGHTS_LIST.filter((article) => article.category !== 'CONSUMER BEHAVIOR').map((article, idx) => (
               <div
                 key={article.id}
                 onClick={() => onSelectInsight(article)}
@@ -730,41 +730,6 @@ export const KineraMainPage: React.FC<KineraMainPageProps> = ({
             <button className="group flex items-center gap-2 text-sm font-semibold text-slate-700 hover:text-[#C84B31] transition-colors bg-[#FAF8F5] hover:bg-[#FDF0ED] px-6 py-3 rounded-full border border-[#EAE6DC] hover:border-[#C84B31] w-full justify-center">
               View all insights
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </button>
-          </div>
-
-        </div>
-      </section>
-
-      {/* 8. LET'S TALK (CALL TO ACTION) */}
-      <section id="contact" className="py-24 bg-[#FAF8F5] reveal-on-scroll">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          
-          <span className="text-[11px] font-bold text-slate-500 tracking-[0.2em] uppercase font-sans-clean block">
-            ••• LET'S TALK
-          </span>
-
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-sans-clean font-semibold text-slate-950 tracking-tight leading-tight">
-            Have a decision that needs a clearer picture?
-          </h2>
-
-          <p className="text-xs sm:text-sm text-slate-600 max-w-lg mx-auto leading-relaxed font-normal">
-            Tell us what you're trying to figure out. We'll tell you honestly whether we're the right team — and how fast we could get you an answer.
-          </p>
-
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-3.5">
-            <button
-              onClick={() => onOpenProjectModal()}
-              className="px-6 py-3 rounded-full text-xs font-semibold text-white bg-[#111625] hover:bg-[#212738] transition-all cursor-pointer shadow-xs active:scale-95"
-            >
-              Start a conversation
-            </button>
-
-            <button
-              onClick={() => scrollToSection('solutions')}
-              className="px-6 py-3 rounded-full text-xs font-semibold text-slate-800 bg-transparent hover:bg-slate-200/50 border border-[#D5D0C5] transition-all cursor-pointer"
-            >
-              Browse our solutions
             </button>
           </div>
 

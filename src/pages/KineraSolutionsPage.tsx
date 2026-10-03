@@ -70,10 +70,10 @@ export const KineraSolutionsPage: React.FC<{
             <span className="w-8 h-px bg-[#C84B31]" /> OUR SOLUTIONS <span className="w-8 h-px bg-[#C84B31]" />
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-sans-clean font-semibold text-slate-950 tracking-tight leading-tight max-w-4xl mx-auto">
-            Research built around the decision, not the deliverable
+            Recruitment built around the right respondent
           </h1>
           <p className="mt-8 text-sm sm:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto">
-            From double-blind stakeholder IDIs to 1.2M patient claims cohorts, every engagement is custom-scoped around the specific commercial decision you're making.
+            From HCP and KOL recruitment to patient, payer and consumer sourcing, every engagement is built around the people your study needs to hear from.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export const KineraSolutionsPage: React.FC<{
       {/* Solutions Detailed List */}
       <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 sm:space-y-32 reveal-on-scroll">
-          {SOLUTIONS_LIST.map((sol, index) => (
+          {SOLUTIONS_LIST.slice(0, 4).map((sol, index) => (
             <div 
               key={sol.id} 
               className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-24 items-start border-t border-[#EAE6DC] pt-12 sm:pt-16 first:border-0 first:pt-0 animate-fade-in-up"

@@ -63,7 +63,7 @@ export const KineraFooter: React.FC<KineraFooterProps> = ({
                   onClick={() => onOpenSolution('primary-market-research')} 
                   className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  Primary Research
+                  HCP & KOL Recruitment
                 </button>
               </li>
               <li>
@@ -71,7 +71,7 @@ export const KineraFooter: React.FC<KineraFooterProps> = ({
                   onClick={() => onOpenSolution('analytics-data-strategy')} 
                   className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  Analytics & Strategy
+                  Patient & Caregiver Recruitment
                 </button>
               </li>
               <li>
@@ -79,7 +79,7 @@ export const KineraFooter: React.FC<KineraFooterProps> = ({
                   onClick={() => onOpenSolution('kol-expert-identification')} 
                   className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  KOL Identification
+                  Payer & Consumer Recruitment
                 </button>
               </li>
               <li>
@@ -87,7 +87,7 @@ export const KineraFooter: React.FC<KineraFooterProps> = ({
                   onClick={() => onOpenSolution('brand-message-tracking')} 
                   className="hover:text-white transition-colors cursor-pointer text-left"
                 >
-                  Brand Tracking
+                  Fieldwork & Project Support
                 </button>
               </li>
             </ul>
@@ -229,23 +229,31 @@ export const KineraFooter: React.FC<KineraFooterProps> = ({
             <div className="space-y-2 text-xs text-slate-400 max-h-64 overflow-y-auto pr-2">
               {legalModal === 'Privacy Policy' && (
                 <>
-                  <p>Kinera Research uses personal information to respond to research enquiries, recruit qualified participants and deliver agreed research services.</p>
-                  <p>We limit access to people and service providers who need the information for those purposes, retain it only as long as necessary and apply appropriate confidentiality and security safeguards.</p>
-                  <p>You may contact Kinera Research to request access, correction or deletion of your personal information, subject to applicable law.</p>
+                  <p><strong className="text-white">1. Who we are</strong><br />Kinera Research provides healthcare market research and expert recruitment services. We act as a data controller for the personal data described in this policy, and as a data processor where we handle data on behalf of our clients.</p>
+                  <p><strong className="text-white">2. Our commitment</strong><br />We are committed to complying with the EU GDPR, the UK GDPR, India's Digital Personal Data Protection Act, 2023 and other applicable data protection laws. Our information security controls are aligned with ISO/IEC 27001.</p>
+                  <p><strong className="text-white">3. Data we collect</strong><br />Identity and contact details; professional details such as specialty, qualifications, institution, experience and licensing; research participation data; payment details required for honoraria; and technical data such as IP address, browser and device information.</p>
+                  <p><strong className="text-white">4. Why we use your data and our legal basis</strong><br />We use data to recruit and screen professionals, schedule and conduct research, process honoraria, keep records accurate, prevent fraud and send future-study updates where you have opted in. The relevant basis may be consent, contract, legal obligation or legitimate interests.</p>
+                  <p><strong className="text-white">5. Your rights</strong><br />You may request access, correction, deletion, restriction, portability, object to processing and withdraw consent at any time. You may also complain to your local data protection authority.</p>
                 </>
               )}
               {legalModal === 'Terms of Use' && (
                 <>
-                  <p>By using this website, you agree to use its content lawfully and not to interfere with the website, its security or another person's access to it.</p>
-                  <p>Website content is provided for general information and may change without notice. It does not constitute medical, legal, financial or professional advice.</p>
-                  <p>Kinera Research retains its rights in the website content, brand and materials. Any permitted use must preserve applicable copyright and attribution notices.</p>
+                  <p><strong className="text-white">1. Acceptance</strong><br />By accessing or using the Kinera Research website and services, you agree to these Terms.</p>
+                  <p><strong className="text-white">2. Our services</strong><br />We provide healthcare research recruitment and related consulting services. Website content is for general information and does not constitute medical, legal or investment advice.</p>
+                  <p><strong className="text-white">3. Eligibility and accurate information</strong><br />You must be at least 18 years old and provide accurate, current information. Healthcare professionals must truthfully represent their credentials and experience when taking part in studies.</p>
+                  <p><strong className="text-white">4. Acceptable use</strong><br />You agree not to misrepresent your identity or qualifications, attempt unauthorised access, copy or scrape our content without permission, or use the site for unlawful or harmful purposes.</p>
+                  <p><strong className="text-white">5. Honoraria</strong><br />Where a study offers an honorarium, it is paid after successful completion and verification, in line with the terms stated for that study and applicable tax and compliance rules.</p>
+                  <p><strong className="text-white">6. Intellectual property</strong><br />All website content, branding and materials are owned by or licensed to Kinera Research and are protected by intellectual property law.</p>
+                  <p><strong className="text-white">7. Limitation of liability</strong><br />To the extent permitted by law, we are not liable for indirect or consequential losses arising from use of the site. Nothing in these Terms limits liability that cannot be limited by law.</p>
+                  <p><strong className="text-white">8. Governing law</strong><br />These Terms are governed by the laws of India, and the courts of Pune, Maharashtra have jurisdiction, subject to any mandatory consumer rights.</p>
+                  <p><strong className="text-white">9. Changes and contact</strong><br />We may update these Terms from time to time. Continued use of the website after an update means you accept the revised Terms.</p>
                 </>
               )}
               {legalModal === 'Cookie Policy' && (
                 <>
-                  <p>This website may use essential cookies and similar technologies to keep the site secure, remember basic preferences and understand aggregate site usage.</p>
-                  <p>Where required, non-essential cookies are used only with your consent. You can manage cookies through your browser settings, although disabling some cookies may affect site functionality.</p>
-                  <p>Cookie practices may change as the website and its analytics tools evolve. The latest version of this policy will appear here.</p>
+                  <p><strong className="text-white">1. Your consent</strong><br />In line with GDPR and ePrivacy rules, we place non-essential cookies only after you give consent through our cookie banner. You can accept all, reject all or choose categories, and change your choice at any time through Cookie Settings.</p>
+                  <p><strong className="text-white">2. Managing cookies in your browser</strong><br />You can block or delete cookies in your browser settings. Blocking strictly necessary cookies may affect how the site works.</p>
+                  <p><strong className="text-white">3. Third-party cookies</strong><br />Some cookies may be set by third-party providers, such as analytics tools. These providers process data under their own privacy policies and our agreements with them.</p>
                 </>
               )}
             </div>

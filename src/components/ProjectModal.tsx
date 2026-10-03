@@ -16,8 +16,8 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
     name: '',
     email: '',
     company: '',
-    category: initialTopic || 'Pharma & Biotech',
-    timeline: 'Within 2-4 weeks',
+    category: initialTopic || 'HCP & KOL Recruitment',
+    markets: '',
     decisionDescription: '',
   });
 
@@ -55,7 +55,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               Message Received
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-              Thank you, <strong>{formData.name || 'Partner'}</strong>. A senior research director from Kinera Research will review your decision scope and get back to <strong>{formData.email}</strong> within one business day.
+              Thank you, <strong>{formData.name || 'Partner'}</strong>. A member of the Kinera Research team will review your brief and get back to <strong>{formData.email}</strong> within 2 hours.
             </p>
             <div className="pt-2">
               <button
@@ -73,10 +73,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 LET'S TALK
               </span>
               <h2 className="text-2xl sm:text-3xl font-sans-clean font-bold text-slate-950 mt-1">
-                Have a decision that needs a clearer picture?
+                Let's Get Your Project Started
               </h2>
               <p className="text-xs text-slate-600 mt-1">
-                Tell us what you're trying to figure out. We'll tell you honestly whether we're the right team — and how fast we could get you an answer.
+                Share your brief and we'll build the plan. Tell us what you're recruiting for. We'll come back with a clear plan, timeline and cost, so you know exactly when your respondents will be ready for fieldwork.
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 <input
                   type="text"
                   required
-                  placeholder="Northfield Bio"
+                  placeholder="Zenvexa Pharmaceuticals"
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   className="w-full px-3.5 py-2 rounded-lg border border-[#D5D0C5] text-xs bg-white focus:outline-none focus:border-slate-800"
@@ -127,59 +127,49 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
               <div>
                 <label className="block text-[11px] font-semibold text-slate-700 mb-1">
-                  Industry Category
+                  Who do you need to recruit?
                 </label>
                 <select
                   value={formData.category}
                   onChange={(e) => setFormData({ ...formData, category: e.target.value })}
                   className="w-full px-3.5 py-2 rounded-lg border border-[#D5D0C5] text-xs bg-white focus:outline-none focus:border-slate-800"
                 >
-                  <option value="Pharma & Biotech">Pharma & Biotech</option>
-                  <option value="Medical Devices">Medical Devices</option>
-                  <option value="Health Insurance">Health Insurance</option>
-                  <option value="Consumer Health">Consumer Health</option>
-                  <option value="Digital Health">Digital Health</option>
-                  <option value="CPG & Retail">CPG & Retail</option>
-                  <option value="Nonprofit & Public Health">Nonprofit & Public Health</option>
+                  <option value="HCP & KOL Recruitment">HCP &amp; KOL Recruitment</option>
+                  <option value="Patient & Caregiver Recruitment">Patient &amp; Caregiver Recruitment</option>
+                  <option value="Payer & Consumer Recruitment">Payer &amp; Consumer Recruitment</option>
+                  <option value="Fieldwork & Project Support">Fieldwork &amp; Project Support</option>
                 </select>
               </div>
             </div>
 
             <div>
               <label className="block text-[11px] font-semibold text-slate-700 mb-1">
-                What decision are you trying to make?
+                Markets
               </label>
-              <textarea
-                rows={3}
-                required
-                placeholder="E.g., We need to test pricing elasticity against an incumbent biosimilar launch in Q4, or evaluate unaided awareness among European cardiologists..."
-                value={formData.decisionDescription}
-                onChange={(e) => setFormData({ ...formData, decisionDescription: e.target.value })}
+              <input
+                type="text"
+                placeholder="e.g., US, UK, Germany"
+                value={formData.markets}
+                onChange={(e) => setFormData({ ...formData, markets: e.target.value })}
                 className="w-full px-3.5 py-2 rounded-lg border border-[#D5D0C5] text-xs bg-white focus:outline-none focus:border-slate-800"
               />
             </div>
 
             <div>
               <label className="block text-[11px] font-semibold text-slate-700 mb-1">
-                Target Timeline
+                Tell us about your study
               </label>
-              <div className="grid grid-cols-3 gap-2">
-                {['Immediate (1-2 wks)', 'Standard (2-4 wks)', 'Planning ahead (1-3 mos)'].map((opt) => (
-                  <button
-                    key={opt}
-                    type="button"
-                    onClick={() => setFormData({ ...formData, timeline: opt })}
-                    className={`py-1.5 px-2 rounded-lg text-[11px] font-medium border cursor-pointer ${
-                      formData.timeline === opt
-                        ? 'bg-[#141722] text-white border-[#141722]'
-                        : 'bg-white text-slate-700 border-[#D5D0C5] hover:bg-slate-50'
-                    }`}
-                  >
-                    {opt}
-                  </button>
-                ))}
-              </div>
+              <textarea
+                rows={3}
+                required
+                placeholder="Tell us who you need to recruit, the methodology and when you need fieldwork to start."
+                value={formData.decisionDescription}
+                onChange={(e) => setFormData({ ...formData, decisionDescription: e.target.value })}
+                className="w-full px-3.5 py-2 rounded-lg border border-[#D5D0C5] text-xs bg-white focus:outline-none focus:border-slate-800"
+              />
             </div>
+
+            <p className="text-[11px] text-slate-500">We reply within 2 hours.</p>
 
             <div className="pt-2 flex items-center justify-end gap-3">
               <button
@@ -193,7 +183,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 type="submit"
                 className="px-6 py-2.5 rounded-full text-xs font-bold text-white bg-[#B84A39] hover:bg-[#A33D2D] transition-colors cursor-pointer flex items-center gap-1.5"
               >
-                <span>Send inquiry</span>
+                <span>Share your brief</span>
                 <Send className="w-3.5 h-3.5" />
               </button>
             </div>

@@ -35,7 +35,7 @@ export const KineraIndustriesPage: React.FC<{
 
                 {/* Number / Identifier */}
                 <div className="text-[10px] font-bold text-slate-400 group-hover:text-slate-500 tracking-[0.2em] font-sans-clean mb-6 border-b border-[#EAE6DC] group-hover:border-slate-800 pb-4 transition-colors duration-500">
-                  VOL. {String(index + 1).padStart(2, '0')}
+                  VOL. {['01', '02', '03', '04', '05', '07', '08', '09', '10'][index]}
                 </div>
                 
                 {/* Title & Desc */}
@@ -46,10 +46,10 @@ export const KineraIndustriesPage: React.FC<{
                   {industry.description}
                 </p>
 
-                {/* Recent Questions */}
+                {/* Recruitment Profiles */}
                 <div className="bg-[#FAF8F5] group-hover:bg-[#1E263B] p-6 border border-[#EAE6DC] group-hover:border-transparent space-y-4 transition-all duration-500 transform group-hover:translate-y-[-4px]">
                   <h4 className="text-[10px] font-bold text-slate-500 group-hover:text-slate-400 uppercase tracking-widest font-sans-clean transition-colors duration-500">
-                    Recent Questions Answered
+                    Who We Recruit
                   </h4>
                   <ul className="space-y-4">
                     {industry.recentQuestions.map((q, qIdx) => (

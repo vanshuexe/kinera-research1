@@ -32,7 +32,7 @@ export const KineraInsightsPage: React.FC<{
       {/* Insights List */}
       <section className="py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12 reveal-on-scroll">
-          {INSIGHTS_LIST.map((insight, index) => {
+          {INSIGHTS_LIST.filter((insight) => insight.category !== 'CONSUMER BEHAVIOR').map((insight, index) => {
             return (
               <div 
                 key={insight.id}

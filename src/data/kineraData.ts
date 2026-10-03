@@ -1,11 +1,9 @@
 import { SolutionItem, InsightArticle, IndustryCategory } from '../types';
 
 export const TRUSTED_CLIENTS = [
-  'Aravel Health',
-  'Marchand & Kohl',
-  'Northfield Bio',
-  'Union Consumer Group',
-  'Verity Pharma'
+  'Zenvexa Pharmaceuticals',
+  'MedFassst Healthcare',
+  'Revive Me Technologies'
 ];
 
 export const STATS_METRICS = [
@@ -37,20 +35,20 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
     badge: 'Pr',
     badgeBg: '#D1EAE2',
     badgeText: '#18473D',
-    title: 'Primary Market Research',
-    description: 'Quant and qual studies with patients, HCPs, payers, and consumers — surveys, interviews, and advisory boards designed around your specific decision.',
+    title: 'HCP & KOL Recruitment',
+    description: 'The right specialists, confirmed for your study.',
     fullDetails: {
-      overview: 'We design bespoke qualitative and quantitative instruments engineered specifically around the high-stakes decision your commercial or clinical leadership faces, cutting out extraneous questions.',
+      overview: 'We recruit physicians, specialists and opinion leaders who match your screener, from community practitioners to national and regional KOLs. Whether you send us a target list or need us to build one, every respondent is checked before you see them.',
       keyMethods: [
-        'Double-blind in-depth stakeholder interviews (IDIs)',
-        'Physician and payer digital advisory boards',
-        'Segmented quantitative surveys across validated panels',
-        'Longitudinal patient journey & barrier mapping'
+        'Outreach by specialty, sub-specialty and geography',
+        'Screener-based qualification and credential verification',
+        'KOL and emerging-expert identification for IDIs and advisory boards',
+        'Work from your target list or a list we build'
       ],
       typicalTimeline: '2 to 4 weeks from scope to executive readout',
       sampleQuestions: [
-        'How will oncologists sequence our new compound against current standards of care?',
-        'What are the primary clinical and economic barriers preventing formulary tier-1 access?'
+        'Which specialists and KOLs best match our study screener?',
+        'What credentials and experience should be verified before fieldwork?'
       ]
     }
   },
@@ -59,20 +57,20 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
     badge: 'An',
     badgeBg: '#F5E8BE',
     badgeText: '#5A4A12',
-    title: 'Analytics & Data Strategy',
-    description: 'Turning first- and third-party data into forecasting models, segmentation, and dashboards your team can actually use day to day.',
+    title: 'Patient & Caregiver Recruitment',
+    description: 'Real patient voices, recruited with care.',
     fullDetails: {
-      overview: 'Transform disparate claims records, CRM interactions, EHR feeds, and market sales data into unified predictive models and actionable commercial intelligence.',
+      overview: "We connect you with patients and caregivers who have lived the condition or treatment you're studying. Consent and privacy are built into how we recruit, and reminders keep attendance high.",
       keyMethods: [
-        'Prescriber deciling and propensity modeling',
-        'Dynamic market sizing & patient volume forecasting',
-        'Executive decision dashboards in real time',
-        'Multi-source claims and registry harmonization'
+        'Condition- and therapy-specific screening',
+        'Support for rare and hard-to-reach populations',
+        'Consent and privacy-compliant recruitment',
+        'Scheduling and reminders to reduce no-shows'
       ],
       typicalTimeline: '3 to 6 weeks for custom model deployment',
       sampleQuestions: [
-        'Which physician clusters exhibit the highest propensity to adopt early-stage therapeutic classes?',
-        'What real-world patient drop-off points exist between prescription write and first fulfillment?'
+        'Which patient and caregiver profiles are available in our target markets?',
+        'What support is needed to recruit rare or hard-to-reach populations?'
       ]
     }
   },
@@ -81,20 +79,19 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
     badge: 'KOL',
     badgeBg: '#F3D7CA',
     badgeText: '#6A3120',
-    title: 'KOL & Expert Identification',
-    description: 'Mapping and engaging the opinion leaders and specialists who shape decisions in your therapeutic area or category.',
+    title: 'Payer & Consumer Recruitment',
+    description: 'The decision-makers and everyday voices behind access and demand.',
     fullDetails: {
-      overview: 'Beyond simple publication citation counts, we track true influence networks: clinical trial PI leadership, treatment guidelines authorship, digital discourse, and community referral hubs.',
+      overview: 'We source pharmacy directors, formulary decision-makers and consumers who fit your study profile, so pricing, access and perception research reaches the right people.',
       keyMethods: [
-        'Network graph analysis of referral corridors',
-        'Digital opinion leader (DOL) footprint evaluation',
-        'Emerging regional specialist identification',
-        'Advisory board recruitment and compliance vetting'
+        'Payer and P&T committee member sourcing',
+        'Consumer recruitment against demographic and behavioral screeners',
+        'Multi-market feasibility built in'
       ],
       typicalTimeline: '10 to 14 business days',
       sampleQuestions: [
-        'Who are the fast-rising clinical investigators driving protocol innovation in our rare disease space?',
-        'Which digital medical influencers genuinely shape specialist prescribing behavior?'
+        'Which payer and P&T decision-makers should we speak with?',
+        'Which consumer profiles match our demographic and behavioral screeners?'
       ]
     }
   },
@@ -103,20 +100,20 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
     badge: 'Br',
     badgeBg: '#E8E2D5',
     badgeText: '#4A4336',
-    title: 'Brand & Message Tracking',
-    description: "Continuous read on awareness, perception, and message pull-through, so you know what's landing before your competitors do.",
+    title: 'Fieldwork & Project Support',
+    description: 'We handle the logistics. You run the research.',
     fullDetails: {
-      overview: 'High-frequency continuous tracker that isolates signal from noise. Spot message fatigue, monitor competitor claims, and verify unaided vs. aided recall in real time.',
+      overview: 'From the first feasibility check to the final honorarium, we take the operational load off your team, so nothing slips between recruitment and the interview.',
       keyMethods: [
-        'Pulse wave testing with verified target HCP cohorts',
-        'Message pull-through and credibility benchmarking',
-        'Competitive claim counter-positioning analysis',
-        'Rapid creative and value proposition testing'
+        'Feasibility and incidence assessment before you commit',
+        'Session scheduling across time zones, with reminders',
+        'Honorarium management and respondent payments',
+        'Regular recruitment status updates'
       ],
       typicalTimeline: 'Continuous reporting with bi-weekly executive briefs',
       sampleQuestions: [
-        'Is our core efficacy claim resonating over competitor safety messaging in tier-1 institutions?',
-        'Where are target prescribers encountering conflicting clinical narratives?'
+        'What feasibility and incidence can we expect before recruitment begins?',
+        'How should sessions, reminders and honoraria be managed across markets?'
       ]
     }
   },
@@ -168,28 +165,28 @@ export const SOLUTIONS_LIST: SolutionItem[] = [
 
 export const METHOD_STEPS = [
   {
-    title: '1. Signal Alignment',
+    title: '1. Brief Alignment',
     description: 'We start with your open commercial question, defining exactly what a good, actionable answer needs to look like.'
   },
   {
-    title: '2. Custom Structure',
-    description: 'We architect a custom methodology — blending qualitative, quantitative, and secondary data sources specific to your decision.'
+    title: '2. Feasibility & Planning',
+    description: 'Before you commit, we assess availability and incidence for your target audience. You get a realistic timeline, sample plan and cost estimate, so you know exactly what to expect.'
   },
   {
-    title: '3. Precision Sourcing',
-    description: 'Targeted fieldwork and panel data collection, strictly controlled for quality, speed, and exact respondent criteria.'
+    title: '3. Targeted Sourcing',
+    description: "Have a target list? We work directly from it and reach out only to the data you provide. Don't have one? We build a focused list matched to your study. Either way, we recruit for your criteria, not whoever is easiest to find."
   },
   {
-    title: '4. Deep Synthesis',
-    description: 'Senior researchers — not junior analysts — connect the raw findings into a clear, cohesive, and decision-ready narrative.'
+    title: '4. Screening & Verification',
+    description: 'Every respondent is checked against your screener and their credentials are confirmed before we present them. Duplicates and mismatches are filtered out early, so your fieldwork stays clean.'
   },
   {
-    title: '5. Strategic Translation',
-    description: 'We translate insights into concrete commercial strategies, mapping out the "so what" and "what now" for your brand.'
+    title: '5. Scheduling & Fieldwork Support',
+    description: 'We confirm participants, schedule sessions across time zones and send reminders to protect attendance. You get regular updates on recruitment status until every slot is filled.'
   },
   {
-    title: '6. Ongoing Support',
-    description: 'We stay engaged past the final readout to help socialize findings across your organization and adjust to new questions.'
+    title: '6. Honorarium & Closeout',
+    description: "We manage respondent honoraria and close out the project with a final status summary. Have another wave or a new study? We're ready to start again with the same care."
   }
 ];
 
@@ -197,124 +194,103 @@ export const INDUSTRIES_LIST: IndustryCategory[] = [
   {
     id: 'pharma-biotech',
     name: 'Pharma & Biotech',
-    description: 'Supporting therapeutic franchises across oncology, immunology, rare diseases, and CNS with decision-grade patient and prescriber intelligence.',
+    description: 'Verified physicians, KOLs, patients and caregivers across all therapeutic areas, from common conditions to rare diseases.',
     recentQuestions: [
-      'Determining optimal sequencing against biosimilar market entries',
-      'Validating patient-reported burden for regulatory endpoint filings'
+      'Physicians and KOLs for IDIs and advisory boards',
+      'Patients on specific therapies for journey and burden research'
     ]
   },
   {
     id: 'medical-devices',
     name: 'Medical Devices',
-    description: 'Guiding surgical robotics, cardiovascular hardware, and diagnostic device makers through hospital procurement committee dynamics.',
+    description: 'Clinicians and hospital decision-makers across specialties, ready for your device and procedure research.',
     recentQuestions: [
-      'Value proposition testing for hospital capital budget approvals',
-      'Surgical workflow adoption friction mapping'
+      'Physicians, surgeons and nurses who use or evaluate devices',
+      'Procurement and value analysis committee members'
     ]
   },
   {
     id: 'health-insurance',
     name: 'Health Insurance',
-    description: 'Demystifying plan member experience, preventative program engagement, and provider network satisfaction.',
+    description: 'Payer decision-makers and plan members, recruited for your coverage, access and experience research.',
     recentQuestions: [
-      'Member retention drivers in Medicare Advantage renewals',
-      'Value-based care incentive alignment with primary care networks'
+      'Medical and pharmacy directors, P&T committee members',
+      'Health plan members across age and coverage types'
     ]
   },
   {
     id: 'consumer-health',
     name: 'Consumer Health',
-    description: 'Translating consumer OTC wellness habits, vitamin & supplement loyalty, and digital self-care behaviors.',
+    description: 'Everyday consumers matched to your OTC, supplement and self-care research criteria.',
     recentQuestions: [
-      'E-commerce vs. retail pharmacy shopper basket decision journey',
-      'Ingredient transparency impact on premium brand switching'
+      'OTC and supplement buyers by demographic and behavior',
+      'Pharmacists and health-conscious shoppers'
     ]
   },
   {
     id: 'digital-health',
     name: 'Digital Health',
-    description: 'Evaluating user retention, clinician prescription behavior, and reimbursement viability for digital therapeutics and remote monitoring platforms.',
+    description: 'Clinicians and real users for your digital therapeutics and remote monitoring research.',
     recentQuestions: [
-      'User drop-off analysis in remote chronic condition management apps',
-      'Physician EHR integration barriers and willingness to prescribe'
-    ]
-  },
-  {
-    id: 'cpg-retail',
-    name: 'CPG & Retail',
-    description: 'Analyzing shifting consumer health perceptions, functional beverage trends, and clean-label demand.',
-    recentQuestions: [
-      'Consumer trade-up willingness for clinically backed personal care',
-      'Omnichannel loyalty drivers in specialty health retail'
+      'Healthcare professionals who prescribe or use digital tools',
+      'Patients managing chronic conditions with apps and devices'
     ]
   },
   {
     id: 'nonprofit-public-health',
     name: 'Nonprofit & Public Health',
-    description: 'Assisting foundations, disease advocacy groups, and public health institutions in measuring community health interventions.',
+    description: 'Patients, caregivers and community voices for advocacy and public health research.',
     recentQuestions: [
-      'Caregiver burden measurement across underserved rural communities',
-      'Vaccine and preventative screening communication effectiveness'
+      'Caregivers and patient advocacy group members',
+      'Community health workers and underserved populations'
     ]
   },
   {
     id: 'animal-health',
     name: 'Animal Health',
-    description: 'Evaluating veterinary procurement, pet owner wellness trends, and livestock preventative care innovations.',
+    description: 'Veterinarians and pet owners recruited for your veterinary product and pet wellness research.',
     recentQuestions: [
-      'Clinic adoption of premium diagnostic panels vs point-of-care testing',
-      'Direct-to-consumer pet supplement loyalty and switching behavior'
+      'Veterinarians and clinic decision-makers',
+      'Pet owners by species, age and spending habits'
     ]
   },
   {
     id: 'diagnostics-testing',
     name: 'Diagnostics & Testing',
-    description: 'Providing intelligence on laboratory equipment purchasing, at-home test market viability, and genetic screening adoption.',
+    description: 'Physicians, lab professionals and patients for your testing and screening research.',
     recentQuestions: [
-      'Reimbursement viability for novel oncology biomarker panels',
-      'Physician hesitancy in adopting new liquid biopsy guidelines'
+      'Physicians who order or interpret tests',
+      'Lab directors, pathologists and patients with testing experience'
     ]
   },
   {
     id: 'b2b-health-services',
     name: 'B2B Health Services',
-    description: 'Mapping the vendor landscape for revenue cycle management, supply chain tech, and specialized staffing solutions.',
+    description: 'Hospital and health system executives for research on the vendors and services they buy.',
     recentQuestions: [
-      'Hospital CFO willingness to outsource specialized revenue cycle functions',
-      'Market sizing for AI-driven clinical documentation software'
+      'Hospital CFOs, revenue cycle and operations leaders',
+      'Supply chain, IT and staffing decision-makers'
     ]
   },
-  {
-    id: 'private-equity',
-    name: 'Healthcare Private Equity',
-    description: 'Delivering rapid commercial due diligence and voice-of-customer validation for healthcare assets under consideration.',
-    recentQuestions: [
-      'Validating total addressable market and net-promoter score for a target asset',
-      'Assessing the threat of upcoming regulatory shifts on clinic roll-ups'
-    ]
-  }
 ];
 
 export const INSIGHTS_LIST: InsightArticle[] = [
   {
-    id: 'why-panel-fatigue-is-quietly-skewing-your-hcp-data',
-    category: 'METHODOLOGY',
-    title: 'Why panel fatigue is quietly skewing your HCP data',
-    description: "What we're seeing across 40+ fielded studies, and three ways to keep sample quality high.",
-    gradientClass: 'from-emerald-300 via-teal-400 to-cyan-400',
+    id: 'ai-is-changing-neurology-research',
+    category: 'INNOVATION',
+    title: 'How AI is changing neurology research',
+    description: 'Why neurological research teams are pairing AI-assisted analysis with more human respondent conversations.',
+    gradientClass: 'from-[#6B4FA3] via-[#2C9A86] to-[#D3A529]',
     readTime: '5 min read',
-    author: 'Kinera Method Practice Group',
+    author: 'Kinera Neurology Practice Group',
     content: [
-      "In commercial biopharma research, teams frequently rely on automated physician panels to quickly gauge market reactions. Over the past 24 months, our data indicates that <b>specialist response fatigue</b> has dramatically increased survey speeding and generic multi-choice selection.",
-      "> \"We're seeing oncologists and neurologists being asked to complete 40-minute generic surveys on mobile screens between patient consults. The signal-to-noise ratio rapidly degrades under these conditions.\"",
-      "### The Cost of Convenience",
-      "When market researchers optimize for speed and cost-per-complete, they sacrifice context. A doctor rushing through a drag-and-drop ranking exercise is not providing strategic insight; they are performing a task. This leads to brand teams making multimillion-dollar positioning decisions based on data that is, at best, a reflection of the survey's UX design rather than clinical reality.",
-      "### Three Active Countermeasures",
-      "At Kinera Research, we employ three specific tactics to preserve data integrity:",
-      "<b>1. Ruthless Scoping:</b> We scope engagements strictly around the core business decision, cutting survey length by up to 50%. If a question doesn't directly influence the final decision tree, it gets cut.",
-      "<b>2. Qualitative Verification:</b> We use micro-qualitative follow-ups. If a quantitative trend seems anomalous, we immediately trigger short 15-minute verification calls with a subset of the cohort.",
-      "<b>3. Respectful Compensation:</b> We compensate panel specialists for verified thoughtful contribution rather than speed of completion.",
-      "The result is higher data fidelity, genuine verbatims, and findings your commercial leadership can defend with confidence."
+      "Neurology research is entering a new phase. AI can help teams organize longitudinal records, surface patterns across symptom journeys and identify the questions that deserve deeper human investigation.",
+      "### What AI does well",
+      "AI-assisted workflows can reduce the time spent finding signals across complex clinical and patient data. They can help researchers compare treatment experiences, cluster unmet needs and prepare sharper screeners for neurologists, caregivers and patients.",
+      "### Where human voices matter most",
+      "A model can identify a pattern, but it cannot replace the lived context behind it. Respondent conversations remain essential for understanding diagnosis delays, treatment trade-offs, cognitive burden and the practical realities of managing neurological conditions.",
+      "> \"The strongest neurology studies will use AI to focus the conversation, not to remove people from it.\"",
+      "The opportunity is a better partnership between technology and recruitment: faster signal discovery, more focused qualitative work and findings that remain grounded in the experience of the people the research is meant to serve."
     ]
   },
   {
@@ -393,22 +369,4 @@ export const INSIGHTS_LIST: InsightArticle[] = [
       "<b>Biosimilar entrants</b> must go beyond discounting, building localized contracting strategies that align with the specific incentives of Integrated Delivery Networks (IDNs) and specialized pharmacy benefit managers."
     ]
   },
-  {
-    id: 'the-rise-of-glp1-and-consumer-food-choices',
-    category: 'CONSUMER BEHAVIOR',
-    title: 'The GLP-1 ripple effect on consumer groceries',
-    description: 'How weight-loss therapeutics are shifting basket dynamics in the CPG sector.',
-    gradientClass: 'from-yellow-300 via-orange-400 to-red-500',
-    readTime: '6 min read',
-    author: 'CPG & Retail Intelligence',
-    content: [
-      "The explosive growth of GLP-1 receptor agonists (like Wegovy, Ozempic, and Zepbound) is creating unprecedented secondary effects across the consumer packaged goods (CPG) landscape. It's not just a pharmaceutical trend; it's a massive behavioral shift in the grocery aisles.",
-      "### The New Basket Dynamics",
-      "Our consumer panel data shows that households with an active GLP-1 prescription are radically altering their spending patterns. We observe a marked <b>decrease in high-sugar snacking occasions (down 22%)</b> and a corresponding <b>18% increase in high-protein, small-portion functional foods.</b>",
-      "> \"I don't crave the same things anymore. When I do eat, I want it to be nutrient-dense because I get full so quickly. I've stopped buying family-size bags of anything.\"",
-      "### How Brands Must Pivot",
-      "Forward-looking CPG brands are already adapting their portfolios. The focus is shifting from generic 'diet' or 'low-calorie' messaging to <b>'nutrition-density' and muscle preservation.</b>",
-      "Understanding these nuanced behavioral changes allows retailers to optimize shelf space (moving high-protein mini-meals to endcaps) and brands to innovate packaging sizes that align with the new, reduced-satiety profiles of their consumers."
-    ]
-  }
 ];
